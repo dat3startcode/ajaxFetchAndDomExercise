@@ -1,4 +1,4 @@
-import "./style.css";
+import "./styles/style.css";
 document.getElementById("all-content").style.display = "block";
 
 /*
@@ -16,7 +16,7 @@ document.getElementById("all-content").style.display = "block";
 */
 
 function hideAllShowOne(idToShow) {
-  document.getElementById("about_html").style = "display:none";
+  document.getElementById("home_html").style = "display:none";
   document.getElementById("ex1_html").style = "display:none";
   document.getElementById("ex2_html").style = "display:none";
   document.getElementById("ex3_html").style = "display:none";
@@ -36,10 +36,10 @@ function menuItemClicked(evt) {
       hideAllShowOne("ex3_html");
       break;
     default:
-      hideAllShowOne("about_html");
+      hideAllShowOne("home_html");
       break;
   }
   evt.preventDefault();
 }
 document.getElementById("menu").onclick = menuItemClicked;
-hideAllShowOne("about_html");
+hideAllShowOne("home_html");
